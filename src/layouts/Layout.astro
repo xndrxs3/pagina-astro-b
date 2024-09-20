@@ -46,14 +46,49 @@ const { title } = Astro.props;
 				<p>publicidad</p>
 			</div>
 		</header>
+		<div class="h-72 bg-gradient-to-b to-60% from-[#d3c506] to-[rgb(192, 189, 189)]"></div>
 		<div class="banner"></div>
-		<div class="cards container">
-			<div class="card">1</div>
-			<div class="card">2</div>
-			<div class="card">3</div>
-			<div class="card">4</div>
-			<div class="card">5</div>
-			<div class="card">6</div>
+		<div class="mt-[-80px] h-60 flex gap-2 max-w-[1200px] mx-auto  container">
+			<div class="min-w-44 bg-white border rounded-md grow">1</div>
+			<div class="min-w-44 bg-white border rounded-md grow">2</div>
+			<div class="min-w-44 bg-white border rounded-md grow">3</div>
+			<div class="min-w-44 bg-white border rounded-md grow">4</div>
+			<div class="min-w-44 bg-white border rounded-md grow">5</div>
+			<div class="min-w-44 bg-white border rounded-md grow">6</div>
+		</div>
+
+		<div
+			class="hover:bg-sky-700 bg-yellow-400 items-center text-white py-2 px-4 inline-flex rounded-2xl transition-colors duration-1000 hover:cursor-pointer group"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mr-1 mt-[2px] group-hover:animate-spin"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+				></path>
+			</svg>
+
+			Presioname
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mt-1"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+			</svg>
 		</div>
 	</body>
 </html>
@@ -83,9 +118,8 @@ const { title } = Astro.props;
 		border: none;
 		outline: none;
 		height: 36px;
-
 	}
-	header button{
+	header button {
 		display: inline;
 		width: 32px;
 		border: none;
@@ -95,34 +129,34 @@ const { title } = Astro.props;
 		border-bottom-right-radius: 3px;
 	}
 
-	.input{
+	.input {
 		display: flex;
 		align-items: center;
 	}
-	.banner {
+	/*.banner {
 		height: 280px;
 		background: linear-gradient(
 			to bottom,
 			#d3c506 70%,
 			rgb(192, 189, 189) 100%
 		);
-	}
+	}*//*
 	.container {
 		max-width: 1200px;
 		margin: 0 auto;
 	}
-	.cards {
+	/*.cards {
 		margin-top: -80px;
 		height: 240px;
 		display: flex;
 		gap: 10px;
 	}
-	.card {
+	/*.card {
 		min-width: 180px;
 		background-color: #fff;
 		border-radius: 6px;
 		flex-grow: 1;
-	}
+	}*/
 	.top-header {
 		column-count: 3;
 	}
