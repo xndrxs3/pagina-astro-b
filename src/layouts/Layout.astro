@@ -18,14 +18,19 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<header>
-			<div class="top-header container">
+			<div class="top-header container flex justify-evenly">
 				<img
+					class="h-12 w-32"
 					src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png"
 					alt="LOGO"
 				/>
-				<div class="input">
-					<input placeholder="Escribe algo y encuentra" type="text" />
-					<button>
+				<div class="flex justify-center items-center w-[65%]  ">
+					<input
+						class="h-9 shadow-lg ml-5 w-[80%] inline box-border rounded-l-sm border-none outline-none"
+						placeholder="Buscar productos, marcas y más"
+						type="text"
+					/>
+					<button class="shadow-lg rounded-r-sm">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -42,13 +47,21 @@ const { title } = Astro.props;
 						</svg>
 					</button>
 				</div>
-
-				<p>publicidad</p>
+				<img class="w-[30%] h-15"
+					src="https://http2.mlstatic.com/D_NQ_873803-MLA78739315606_092024-OO.webp"
+					alt=""
+				/>
+				
 			</div>
 		</header>
-		<div class="h-72 bg-gradient-to-b to-60% from-[#d3c506] to-[rgb(192, 189, 189)]"></div>
+		<div
+			class="h-72 bg-gradient-to-b to-90% from-[#ffe600] to-[rgb(192, 189, 189)]"
+		>
+		</div>
 		<div class="banner"></div>
-		<div class="mt-[-80px] h-60 flex gap-2 max-w-[1200px] mx-auto  container">
+		<div
+			class="mt-[-80px] h-60 flex gap-2 max-w-[1200px] mx-auto container"
+		>
 			<div class="min-w-44 bg-white border rounded-md grow">1</div>
 			<div class="min-w-44 bg-white border rounded-md grow">2</div>
 			<div class="min-w-44 bg-white border rounded-md grow">3</div>
@@ -100,25 +113,18 @@ const { title } = Astro.props;
 		background-color: rgb(192, 189, 189);
 	}
 	header {
-		background: #d3c506;
+		background: #ffe600;
 		height: 80px;
-		padding-top: 12px;
+
 	}
 	header img {
-		width: 120px;
-		padding-top: 12px;
+
 	}
-	header input {
-		width: 80%;
-		box-sizing: border-box;
-		display: inline;
-		padding: 10px 8px;
-		border-top-left-radius: 3px;
-		border-bottom-left-radius: 3px;
+	/* header input {
 		border: none;
 		outline: none;
 		height: 36px;
-	}
+	} */
 	header button {
 		display: inline;
 		width: 32px;
@@ -129,10 +135,10 @@ const { title } = Astro.props;
 		border-bottom-right-radius: 3px;
 	}
 
-	.input {
+	/* .input {
 		display: flex;
 		align-items: center;
-	}
+	} */
 	/*.banner {
 		height: 280px;
 		background: linear-gradient(
@@ -140,7 +146,7 @@ const { title } = Astro.props;
 			#d3c506 70%,
 			rgb(192, 189, 189) 100%
 		);
-	}*//*
+	}*/
 	.container {
 		max-width: 1200px;
 		margin: 0 auto;
@@ -157,7 +163,4 @@ const { title } = Astro.props;
 		border-radius: 6px;
 		flex-grow: 1;
 	}*/
-	.top-header {
-		column-count: 3;
-	}
 </style>
